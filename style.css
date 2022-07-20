@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,400&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.picture {
+  width: 35vw;
+  background-image: url(/maksym-tymchyk-x0HNPP8SDSg-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  background-size: cover;
+}
+img {
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 6rem;
+}
+.logo {
+  position: absolute;
+  display: flex;
+  top: 32%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  color: #fff;
+  width: 100%;
+  justify-content: center;
+  flex-flow: row wrap;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.2);
+  gap: 1.2em;
+  text-shadow: 5px 5px 8px black;
+  text-transform: uppercase;
+}
+.logo h1 {
+  font-size: 4rem;
+  color: #367752;
+  cursor: pointer;
+}
+.logo h1 span {
+  color: purple;
+}
+.credit {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 80%;
+  width: max-content;
+}
+.credit a {
+  color: #596d48;
+}
+.credit a:hover {
+  text-decoration: none;
+}
+.right {
+  width: 65vw;
+  line-height: 1.3em;
+  background-color: #f8f8f8;
+  overflow-y: auto;
+}
+
+header {
+  padding-left: 7%;
+  padding-right: 20%;
+  height: 39.25%;
+  display: flex;
+  font-size: large;
+  flex-flow: column;
+  justify-content: flex-end;
+}
+
+header .remote-text {
+  margin-top: 1.6rem;
+  margin-bottom: 40px;
+}
+.form-title {
+  display: block;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  font-size: larger;
+  color: #404040;
+}
+label,
+input {
+  display: block;
+}
+label {
+  text-transform: uppercase;
+  font-size: 80%;
+}
+form {
+  height: 34%;
+  box-shadow: 0.5px 2px #e8e8e8;
+  padding-left: 7%;
+  padding-right: 10%;
+  padding-bottom: 20px;
+  background-color: #fff;
+}
+
+.form-left {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  column-gap: 20px;
+}
+
+input {
+  height: 2rem;
+  width: 90%;
+  margin-bottom: 0.8em;
+  border: solid 1px #e5e7eb;
+  border-radius: 5px;
+  padding-left: 1em;
+}
+.form-left input:focus {
+  outline: none !important;
+  border-color: dodgerblue;
+  box-shadow: 0.5px 0.6px skyblue;
+}
+label.confirm {
+  color: #d8d8d8;
+}
+
+button {
+  padding: 0.7em 2em;
+  border-radius: 6px;
+  border: none;
+  background-color: #596d48;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #597d49;
+}
+.btn {
+  padding-left: 7%;
+  padding-top: 3%;
+}
+.btn p {
+  margin-top: 1em;
+}
+.btn p span {
+  color: #596d48;
+  font-weight: 500;
+  cursor: pointer;
+}
+.btn p span:hover {
+  color: #597d49;
+}
+
+#password,
+#phone {
+  margin-bottom: 0;
+}
+.pass,
+.phone {
+  font-size: 70%;
+  color: red;
+}
+
+#phone:invalid,
+#first-name:invalid,
+#last-name:invalid {
+  outline: none !important;
+  border-color: red;
+}
