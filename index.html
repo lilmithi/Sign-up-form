@@ -36,42 +36,30 @@
             <div class="form-left">
               <div class="input">
                 <label for="first-name">first name</label>
-                <input
-                  type="text"
-                  name="first-name"
-                  id="first-name"
-                  pattern="[a-zA-Z]{3,15}"
-                />
+                <input type="text" name="first-name" id="first-name" />
+                <p>Username must contain 5 - 12 characters</p>
               </div>
               <div class="input">
                 <label for="last-name">last name</label>
-                <input
-                  type="text"
-                  name="last-name"
-                  id="last-name"
-                  pattern="[a-zA-Z]{3,15}"
-                />
+                <input type="text" name="last-name" id="last-name" />
+                <p>Username must contain 5 - 12 characters</p>
               </div>
               <div class="input">
                 <label for="email">email</label>
-                <input type="email" name="email" id="email" />
+                <input type="text" name="email" id="email" />
+                <p>Required format: e.g. me@mydomain.com</p>
               </div>
               <div class="input">
                 <label for="phone">phone number</label>
-                <input
-                  type="tel"
-                  name="phone"
-                  id="phone"
-                  pattern="\+\d{3}\d{9}|\d{10}"
-                />
-                <p class="phone">
-                  Format: +(xxx)xxxxxxxxx or xxxxxxxxxx(10 digits)
-                </p>
+                <input type="tel" name="phone" id="phone" />
+                <p>Must be a valid telephone number(11 digits)</p>
               </div>
               <div class="input">
                 <label for="password">password</label>
                 <input type="password" name="password" id="password" />
-                <p class="pass">Passwords do not match!</p>
+                <p>
+                  Must be alphanumeric and be 8 - 20 characters
+                </p>
               </div>
               <div class="input">
                 <label for="confirm-password">confirm password</label>
@@ -80,6 +68,7 @@
                   name="confirm-password"
                   id="confirm-password"
                 />
+                <p>Passwords do not match!</p>
               </div>
             </div>
           </form>

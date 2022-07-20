@@ -115,16 +115,17 @@ form {
 }
 
 .form-left {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  column-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 7px;
+  column-gap: 30px;
 }
 
 input {
   height: 2rem;
-  width: 90%;
-  margin-bottom: 0.8em;
+  width: 15rem;
+  margin-bottom: 0.1em;
   border: solid 1px #e5e7eb;
   border-radius: 5px;
   padding-left: 1em;
@@ -166,19 +167,13 @@ button:hover {
   color: #597d49;
 }
 
-#password,
+/* #password,
 #phone {
   margin-bottom: 0;
-}
-.pass,
-.phone {
+} */
+input + p {
   font-size: 70%;
   color: red;
-}
-
-#phone:invalid,
-#first-name:invalid,
-#last-name:invalid {
-  outline: none !important;
-  border-color: red;
+  /* opacity: 0; */
+  /* display: none; */
 }
