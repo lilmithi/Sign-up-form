@@ -130,7 +130,8 @@ input {
   border-radius: 5px;
   padding-left: 1em;
 }
-.form-left input:focus {
+.form-left input:focus,
+#confirm-password[isactive="true"] {
   outline: none !important;
   border-color: dodgerblue;
   box-shadow: 0.5px 0.6px skyblue;
@@ -139,14 +140,15 @@ label.confirm {
   color: #d8d8d8;
 }
 
-button {
+button,
+button.valid2 {
   padding: 0.7em 2em;
   border-radius: 6px;
   border: none;
   background-color: #596d48;
   color: #fff;
   font-weight: 500;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 button:hover {
   background-color: #597d49;
@@ -156,7 +158,7 @@ button:hover {
   padding-top: 3%;
 }
 .btn p {
-  margin-top: 1em;
+  margin-top: 0.8em;
 }
 .btn p span {
   color: #596d48;
@@ -167,13 +169,16 @@ button:hover {
   color: #597d49;
 }
 
-/* #password,
-#phone {
-  margin-bottom: 0;
-} */
 input + p {
   font-size: 70%;
   color: red;
-  /* opacity: 0; */
-  /* display: none; */
+  display: none;
+}
+input.invalid + p {
+  display: block;
+}
+
+button.invalid2 {
+  pointer-events: none;
+  background-color: #d8d8d8;
 }
