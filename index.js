@@ -9,6 +9,7 @@ const patterns = {
   email: /^([a-z\d-]{2,9})@([a-z]{3,7})\.([a-z]{2,6})(\.[a-z]{2,3})?$/,
   phone: /^\d{10}$/,
   password: /^[\w@_-]{8,20}$/,
+  confirmpassword: /^[\w@_-]{8,20}$/,
 };
 inputs.forEach((input) => {
   input.addEventListener("keyup", (e) => {
@@ -42,15 +43,16 @@ confirm.addEventListener("keyup", () => {
   }
 });
 
-document.querySelector("html").addEventListener("mouseover", () => {
-  for (let input of inputs) {
-    if (input.value.length == 0) {
-      button.className = "invalid2";
-      redfield.className = "invalid1";
-    } else if (input.className == "invalid") {
-      button.className = "invalid2";
-    } else {
-      button.setAttribute("class", "valid2");
-    }
-  }
-});
+// console.log(
+//   myArr.some((arr) => {
+//     return typeof arr == "boolean";
+//   })
+// );
+
+// function checkvalue(x) {
+//   return x;
+// }
+// for (let eek of inputs) {
+//   let juice = eek.value.split("");
+//   console.log(checkvalue(juice));
+// }

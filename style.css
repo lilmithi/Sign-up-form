@@ -16,7 +16,7 @@
 
 .picture {
   width: 35vw;
-  background-image: url(/maksym-tymchyk-x0HNPP8SDSg-unsplash.jpg);
+  background-image: url(./maksym-tymchyk-x0HNPP8SDSg-unsplash.jpg);
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
@@ -140,15 +140,13 @@ label.confirm {
   color: #d8d8d8;
 }
 
-button,
-button.valid2 {
+button {
   padding: 0.7em 2em;
   border-radius: 6px;
   border: none;
   background-color: #596d48;
   color: #fff;
   font-weight: 500;
-  /* cursor: pointer; */
 }
 button:hover {
   background-color: #597d49;
@@ -176,9 +174,4 @@ input + p {
 }
 input.invalid + p {
   display: block;
-}
-
-button.invalid2 {
-  pointer-events: none;
-  background-color: #d8d8d8;
 }
